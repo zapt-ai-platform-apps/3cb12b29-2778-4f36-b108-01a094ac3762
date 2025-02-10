@@ -19,9 +19,22 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="p-4">
-          <h1 className="text-2xl font-bold">Something went wrong.</h1>
-          <p>Please reload the page or contact support.</p>
+        <div className="p-4 text-center">
+          <h1 className="text-2xl font-bold mb-2">Something went wrong.</h1>
+          <p className="mb-4">
+            We encountered an unexpected error. Please try reloading the page or contact support for assistance.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded mb-2 cursor-pointer"
+          >
+            Reload Page
+          </button>
+          <div>
+            <a href="/support" className="text-blue-600 underline cursor-pointer">
+              Contact Support
+            </a>
+          </div>
         </div>
       );
     }
