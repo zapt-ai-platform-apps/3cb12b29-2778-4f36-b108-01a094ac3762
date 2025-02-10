@@ -1,6 +1,6 @@
-# Local Store Promotions
+# New App
 
-Local Store Promotions centralizes local store information and promotions, providing a modern, interactive experience with an integrated map, dynamic carousels, detailed product catalogs, and user management features.
+New App centralizes local store information and promotions, providing a modern, interactive experience with an integrated map, dynamic carousels, detailed product catalogs, and user management features.
 
 ## Recommended User Journeys
 

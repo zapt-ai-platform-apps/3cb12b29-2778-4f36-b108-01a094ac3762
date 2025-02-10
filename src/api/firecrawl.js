@@ -1,6 +1,8 @@
+import * as Sentry from '@sentry/browser';
+
 export async function fetchStoreData(query) {
   try {
-    // Dummy implementation; replace with actual API call to FireCrawl.
+    console.log("Fetching store data with query:", query);
     const response = await fetch('/api/firecrawl', {
       method: 'POST',
       headers: {
@@ -12,6 +14,7 @@ export async function fetchStoreData(query) {
     return data;
   } catch (error) {
     console.error('Error fetching store data:', error);
+    Sentry.captureException(error);
     throw error;
   }
 }
